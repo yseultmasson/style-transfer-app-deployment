@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: style-transfer
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/yseultmasson/style-transfer-app-deployment.git
+    targetRevision: main
+    path: deployment
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: user-$ymasson
+  syncPolicy:
+    automated:
+      selfHeal: true
