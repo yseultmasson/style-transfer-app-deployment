@@ -10,7 +10,7 @@ spec:
     path: deployment
   destination:
     server: https://kubernetes.default.svc
-    namespace: user-$ymasson
+    namespace: user-ymasson
   syncPolicy:
     automated:
       selfHeal: true
