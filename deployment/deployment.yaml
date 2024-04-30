@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: style-transfer
-        image: mattbricaire/mise-en-production:v0.1.1
+        image: mattbricaire/mise-en-production:v0.1.2
         ports:
         - containerPort: 8000
